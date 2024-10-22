@@ -93,18 +93,3 @@ if __name__ == '__main__':
     bot = CrawlerProcess()
     bot.crawl(GSMSpider)
     bot.start()
-
-
-'''
-def start_requests(self):
-    links = []
-    brands = get_brand_links()
-    for brand in brands:
-        get_links(brand, links)
-    # Exibindo a quantidade de itens:
-    print(f"Quantidade de produtos : {len(links)}")
-    sleep(5)
-    # fazendo as requisições:
-    for link in links:
-        yield scrapy.Request(url=link, callback=self.parse_link)
-'''
